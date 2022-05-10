@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>outside main</title>
+    <link rel="shortcut icon" href="img/image_for_site.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter&family=Nunito&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <section class="top-nav">
+               <a class="logo_header" href="#"></a>
+            <input id="menu-toggle" type="checkbox" />
+            <label class='menu-button-container' for="menu-toggle">
+                <div class='menu-button'></div>
+            </label>
+            <ul class="menu">
+                <li class="main_page"><a href="#">Главная страница</a></li>
+                <li class="inner" onmouseenter="openInnerSubMenu()"><a href="#">Внутренняя архитектура</a>
+                </li>
+                <li class="outer" onmouseenter="openOuterSubMenu()"><a href="#">Внешняя архитектура</a>
+                </li>
+                <li class="games" onmouseenter="openGamesSubMenu()"><a href="#">Игры</a>
+                </li>
+            </ul>
+        </section>
+        <ul class="submenu submenu1" id="sm1" onmouseleave="closeInnerSubMenu()">
+            <li><a href="#">Оперативная память</a></li>
+            <li><a href="#">Материнская плата</a></li>
+            <li><a href="#">Видеокарта</a></li>
+            <li><a href="#">Процессор</a></li>
+            <li><a href="#">Винчестер</a></li>
+            <li><a href="#">Блок питания</a></li>
+        </ul>
+        <ul class="submenu submenu2" id="sm2" onmouseleave="closeGamesSubMenu()">
+            <li><a href="">Игра о внутренней архитектуре</a></li>
+            <li><a href="">Игра о внешней архитектуре</a></li>
+        </ul>
+        <ul class="submenu submenu3" id="sm3" onmouseleave="closeOuterSubMenu()">
+            <li><a href="" >Монитор</a></li>
+            <li><a href="" >Клавиатура</a></li>
+            <li><a href="">Мышь</a></li>
+            <li><a href="">Системный блок</a></li>
+        </ul>
+    </header>
+    <div class="container">
+        <div class="block">
+            <div class="frame">
+                <div class="screen"><img src="img/монитор.png" alt="" class="screen_img"></div>
+                <div class="mouse"><img src="img/мышь.png" alt="" class="mouse_img"></div>
+                <div class="keyboard"><img src="img/клавиатура.png" alt="" class="keyboard_img"></div>
+                <div class="system_block"><img src="img/системный блок.png" alt=""class="system_block_img"></div>
+            </div>       
+        </div>
+        <div class="list">
+            <div class="list_ul">
+                <ul>
+                    <li><a href="#" onmouseenter="ScreenZoom()" onmouseleave="UnScreenZoom()">Монитор</a></li>
+                    <li><a href="#" onmouseenter="MouseZoom()" onmouseleave="UnMouseZoom()">Компьютерная Мышь</a></li>
+                    <li><a href="#" onmouseenter="KeyboardZoom()" onmouseleave="UnKeyboardZoom()">Компьютерная Клавиатура</a></li>
+                    <li><a href="#" onmouseenter="BlockZoom()" onmouseleave="UnBlockZoom()">Системный Блок</a></li>
+                </ul>
+                
+            </div>   
+            <div class="game_ad">
+                <div class="game_text">
+                    Хочешь собрать свой компьютер? Тогда тебе сюда
+                </div>
+                <div class="game_img">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <div class="logo_footer">desPCription</div>
+        <div class="seti">
+            <div class="text_network">Ищите нас в соцсетях:</div>
+                <a href="#" class="mail"></a>
+                <a href="#" class="vk"></a>
+                <a href="#" class="insta"></a>
+            
+        </div>    
+    </div>
+    <script src="script/script.js"></script>
+    <script src="script/zoom.js"></script>
+</body>
+</html>
